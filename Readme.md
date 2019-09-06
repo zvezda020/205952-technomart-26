@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Любовь Марышева](https://up.htmlacademy.ru/htmlcss/26/user/205952).
-* Наставник: [Николай Маркелов] (https://htmlacademy.ru/profile/nikolamarkelov).
+* Наставник: [Николай Маркелов](https://htmlacademy.ru/profile/nikolamarkelov).
 
 ---
 
