@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Каталог магазин &#171;Техномарт&#187;</title>
   </head>
   <body>
@@ -24,10 +25,13 @@
       </p>
       <ul>
         <li>
-          <button type="button">Войти</button>
+          <a href="#" title="Войти в личный кабинет">Равшан Джамшутович</a>
         </li>
         <li>
-          <button type="button">Регистрация</button>
+          <a href="#" title="Посмотреть историю заказов">Мои заказы</a>
+        </li>
+        <li>
+          <a href="#" title="Войти в личный кабинет">Личный кабинет</a>
         </li>
       </ul>
       <nav>
@@ -51,8 +55,15 @@
       <h2>Перфораторы</h2>
       <section>
         <h2>Фильтр товаров</h2>
-        <h3>Цена</h3>
-        <!--Здесь будет форма -->
+        <div class="#">
+          <label for="select-price">Цена</label>
+          <input type="range" id="select-price" name="select-price" min="1" max="3000" step="1">
+          <label for="price-minimum" class="visually-hidden">0</label>
+          <input id="price-minimum" type="text" name="price-minimum" value="0">
+          <span>-</span>
+          <label for="price-maximum" class="visually-hidden">3000</label>
+          <input id="price-maximum" type="text" name="price-maximum" value="3000">
+        </div>
         <form class="" action="index.html" method="post">
           <fieldset>
             <legend>Производители:</legend>
@@ -225,6 +236,29 @@
             </article>
           </li>
         </ul>
+      </section>
+      <section>
+        <ul>
+          <li><a>1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">Следующая</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Пара слов о перфораторах</h2>
+        <p>Перфоратор — универсальный строительный инструмент.
+          Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+          шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»:
+          в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        </p>
+      </section>
+      <section>
+        <button aria-label="Закрыть модальное окно" type="button" name="button">x</button>
+        <p>Товар добавлен в корзину!</p>
+        <a href="#">Оформить заказ</a>
+        <a href="#">Продолжить покупки</a>
       </section>
     </main>
     <footer>
