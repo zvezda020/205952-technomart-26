@@ -1,126 +1,135 @@
 body {
-  margin: 0;
-  padding: 0;
-
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: 400;
-  font-style: normal;
-
-  background-color: #ffffff;
-  color: #000000;
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 400;
+	font-style: normal;
+	background-color: #ffffff;
+	color: #000000;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 p {
-  font-family: "PTSans", "Arial", sans-serif;
-  font-size: 13px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.85;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000000;
+	font-family: "PTSans", "Arial", sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.85;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000000;
 }
 
 h2 {
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 30px;
-  text-align: left;
-  text-transform: uppercase;
-  color: #000000;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	text-align: left;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+ul {
+	list-style: none;
 }
 
 .button {
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 18px;
-  letter-spacing: normal;
-  text-align: center;
-  color: white;
-  background-color: #ee3643;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 18px;
+	letter-spacing: normal;
+	text-align: center;
+	color: white;
+	background-color: #ee3643;
+	text-transform: uppercase;
 }
 
 .button:hover,
-.button:focus{
-  background-color: #ca2c37;
+.button:focus {
+	background-color: #ca2c37;
 }
 
 .button:active {
-  background-color: #ba2732;
+	background-color: #ba2732;
 }
 
 .button-category {
-  width: 135px;
-  height: 38px;
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  color: #ffffff;
-  line-height: 18px;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  display: inline-block;
-  background-color: #e6e6e6;
+	width: 135px;
+	height: 38px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	display: inline-block;
+	background-color: #e6e6e6;
+	/*не могу определить цвет*/
 }
 
 .button-category:hover,
-.button-category:focus{
-  background-color: #cdcdcd;
+.button-category:focus {
+	background-color: #cdcdcd;
+	/*не могу определить цвет*/
 }
 
 .button-category:active {
-  background-color: #b3b3b3;
+	background-color: #b3b3b3;
+	/*не могу определить цвет*/
 }
 
-.header-up{
-  background-color: #293449;
+.header-up {
+	background-color: #293449;
 }
 
-.header-down{
-  background-color: #f4f7f9;
+.header-down {
+	background-color: #f4f7f9;
 }
 
-.footer-up{
-  background-color: #32425c;
+.footer-up {
+	background-color: #32425c;
 }
 
-.footer-down{
-  background-color: #293449;
+.footer-down {
+	background-color: #293449;
 }
 
 .service-back {
-  background-color: #f4f7f9;
+	background-color: #f4f7f9;
 }
 
-.service-background{
-  background-color: #f4f7f9;
+.service-background {
+	background-color: #f4f7f9;
 }
 
-.phone{
-  width: 270px;
-  height: 45px;
-  border: 3px solid white;
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 21px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1;
-  letter-spacing: 0.42px;
-  text-align: left;
-  color: #e9292a;
+.phone {
+	width: 270px;
+	height: 45px;
+	border: 3px solid white;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 21px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1;
+	letter-spacing: 0.42px;
+	text-align: left;
+	color: #e9292a;
 }
+
+
 /* Не получается пока, нужно подумать
 .phone::before{
   content:"";
@@ -133,13 +142,95 @@ h2 {
   background-repeat: no-repeat;
 }
 */
+
+.main-navigation {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 17px;
+	text-align: left;
+	background-color: #32425c;
+}
+
+
+/*
+.site-navigation,
+.user-navigation:not(first-child) {
+  list-style: none;
+}*/
+
+.site-navigation a {
+	color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+	background-color: #293449;
+}
+
+.site-navigation a:active {
+	background-color: #1d2739;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+
+/*
+.user-navigation:not(first-child) a:hover,
+.user-navigation:not(first-child) a:focus {
+  color: #ee3643;
+}
+*/
+
+.category {
+	width: 300px;
+	height: 123px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 30px;
+	text-align: left;
+	color: #ffffff;
+}
+
+.category:nth-child(1) {
+	background-color: #ffbf47;
+}
+
+.category:nth-child(2) {
+	background-color: #3bbce3;
+}
+
+.category:nth-child(3) {
+	background-color: #dc91d8;
+}
+
+.category:nth-child(5) {
+	background-color: #8ed78f;
+}
+
+.category:nth-child(6) {
+	background-color: #ffc047;
+}
+
+.popular span {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 30px;
+	letter-spacing: normal;
+	text-align: left;
+	color: #32425c;
+	text-transform: uppercase;
+}
+
 .visually-hidden {
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-border: 0;
-padding: 0;
-clip: rect (0 0 0 0);
-overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect (0 0 0 0);
+	overflow: hidden;
 }
