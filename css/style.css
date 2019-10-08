@@ -16,6 +16,26 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-family: "PTSans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+h2 {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #000000;
+}
+
 .button {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
@@ -63,6 +83,56 @@ a {
   background-color: #b3b3b3;
 }
 
+.header-up{
+  background-color: #293449;
+}
+
+.header-down{
+  background-color: #f4f7f9;
+}
+
+.footer-up{
+  background-color: #32425c;
+}
+
+.footer-down{
+  background-color: #293449;
+}
+
+.service-back {
+  background-color: #f4f7f9;
+}
+
+.service-background{
+  background-color: #f4f7f9;
+}
+
+.phone{
+  width: 270px;
+  height: 45px;
+  border: 3px solid white;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: 0.42px;
+  text-align: left;
+  color: #e9292a;
+}
+/* Не получается пока, нужно подумать
+.phone::before{
+  content:"";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  padding-left: 10px;
+  padding-top:10px;
+  background-image: url("../img/svg-technomart/icon-phone.svg");
+  background-repeat: no-repeat;
+}
+*/
 .visually-hidden {
 position: absolute;
 width: 1px;
