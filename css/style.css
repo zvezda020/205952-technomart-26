@@ -12,6 +12,57 @@ body {
   color: #000000;
 }
 
+a {
+  text-decoration: none;
+}
+
+.button {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  text-align: center;
+  color: white;
+  background-color: #ee3643;
+}
+
+.button:hover,
+.button:focus{
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
+.button-category {
+  width: 135px;
+  height: 38px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  background-color: #e6e6e6;
+}
+
+.button-category:hover,
+.button-category:focus{
+  background-color: #cdcdcd;
+}
+
+.button-category:active {
+  background-color: #b3b3b3;
+}
+
 .visually-hidden {
 position: absolute;
 width: 1px;
