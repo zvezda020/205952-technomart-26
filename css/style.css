@@ -75,19 +75,16 @@ ul {
 	text-transform: uppercase;
 	text-align: center;
 	display: inline-block;
-	background-color: #e6e6e6;
-	/*не могу определить цвет*/
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 .button-category:hover,
 .button-category:focus {
-	background-color: #cdcdcd;
-	/*не могу определить цвет*/
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .button-category:active {
-	background-color: #b3b3b3;
-	/*не могу определить цвет*/
+	background-color:rgba(0, 0, 0, 0.3);
 }
 
 .header-up {
@@ -127,6 +124,7 @@ ul {
 	letter-spacing: 0.42px;
 	text-align: left;
 	color: #e9292a;
+	background-color: transparent;
 }
 
 
@@ -222,6 +220,59 @@ ul {
 	text-align: left;
 	color: #32425c;
 	text-transform: uppercase;
+}
+
+.buy {
+  width: 135px;
+  height: 38px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	text-align: center;
+	line-height: 18px;
+	color: #ffffff;
+  box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #63a63e;
+	text-transform: uppercase;
+}
+
+.buy:hover,
+.buy:focus {
+	box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #5fbb2d;
+}
+
+.buy:active {
+	background-color: #518534;
+}
+
+.in-bookmark {
+  width: 135px;
+  height: 38px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	text-align: center;
+	line-height: 18px;
+  border: 3px solid #63a63e;
+	color: #32425c;
+  background-color: transparent;
+	text-transform: uppercase;
+}
+
+.in-bookmark:hover,
+.in-bookmark:focus {
+  border: 3px solid #32425c;
+}
+.in-bookmark:active {
+  color: rgba(50, 66, 92, 0.3);
+	border: 3px solid rgba(50, 66, 92, 0.3);
+}
+
+.btn {
+	width: 141px;
+  height: 38px;
+  object-fit: contain;
+	background-color: transparent;
+	background-image: url(../img/svg-technomart/red-button.svg);
 }
 
 .visually-hidden {
