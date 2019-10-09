@@ -95,6 +95,10 @@ ul {
 	background-color: #293449;
 }
 
+.header-down {
+	background-color: #f4f7f9;
+}
+
 .logo {
   width: 220px;
   height: 47px;
@@ -185,8 +189,29 @@ ul {
 	text-decoration: none;
 }
 
-.header-down {
-	background-color: #f4f7f9;
+.footer-social {
+  text-align: center;
+}
+
+.social-button {
+	width: 42px;
+  height: 42px;
+  background-color: #212a3a;
+	color: #ffffff;
+}
+
+.social-button:hover,
+.social-button:focus{
+	background-color: #ee3643;
+}
+
+.copyright {
+	width: 228px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+	color: white;
 }
 
 .footer-up {
