@@ -1,6 +1,12 @@
 html {
 	box-sizing: border-box;
 }
+/*
+* {
+	margin: 0;
+	padding: 0;
+}
+ так можно? или оставить в body как было? или лучше не нужно?*/
 
 body {
 	margin: 0;
@@ -12,6 +18,7 @@ body {
 	font-style: normal;
 	background-color: #ffffff;
 	color: #000000;
+	min-width: 960px;
 }
 
 a {
@@ -125,6 +132,8 @@ ul {
 }
 
 .header-up {
+	width: auto;
+	height: 42px;
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 17px;
 	text-align: left;
@@ -133,6 +142,8 @@ ul {
 }
 
 .header-down {
+	width: auto;
+	height: 320px;
 	background-color: #f4f7f9;
 }
 
@@ -256,10 +267,14 @@ ul {
 }
 
 .footer-up {
+	width: auto;
+	height: 300px;
 	background-color: #32425c;
 }
 
 .footer-down {
+	width: auto;
+  height: 107px;
 	background-color: #293449;
 }
 
@@ -268,6 +283,8 @@ ul {
 }
 
 .service-background {
+	width: auto;
+	height: 522px;
 	background-color: #f4f7f9;
 }
 
@@ -302,6 +319,8 @@ ul {
 */
 
 .main-navigation {
+	width: 940px;
+	height: 60px;
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 17px;
 	line-height: 17px;
@@ -380,6 +399,12 @@ ul {
 
 .category:nth-child(6) {
 	background-color: #ffc047;
+}
+
+.popular {
+	width: 940px;
+	height: 89px;
+	background-color: #f9f5f0;
 }
 
 .popular span{
