@@ -1,3 +1,7 @@
+html {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -18,10 +22,7 @@ a {
 p {
 	font-family: "PTSans", "Arial", sans-serif;
 	font-size: 13px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 1.85;
+	line-height: 24px;
 	letter-spacing: normal;
 	text-align: left;
 	color: #000000;
@@ -39,14 +40,19 @@ ul {
 	list-style: none;
 }
 
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+/* .block {box-sizing: content-box;} Применятся, чтобы задать блочную модель*/
+
+
 .button {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 14px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
 	line-height: 18px;
-	letter-spacing: normal;
 	text-align: center;
 	color: white;
 	background-color: #ee3643;
@@ -62,11 +68,14 @@ ul {
 	background-color: #ba2732;
 }
 
+.btn-filter{
+	padding: 14px 55px;
+}
+
 .button-category {
 	width: 135px;
 	height: 38px;
 	font-family: "Cuprum", "Arial", sans-serif;
-	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	color: #ffffff;
@@ -76,6 +85,7 @@ ul {
 	text-align: center;
 	display: inline-block;
 	background-color: rgba(0, 0, 0, 0.1);
+	padding: 13px 0px;
 }
 
 .button-category:hover,
@@ -198,6 +208,8 @@ ul {
   height: 42px;
   background-color: #212a3a;
 	color: #ffffff;
+	display: inline-block;
+	border-radius: 50px;
 }
 
 .social-button:hover,
@@ -365,6 +377,10 @@ ul {
   box-shadow: inset 0px -3px 0 0 #367315;
   background-color: #63a63e;
 	text-transform: uppercase;
+	padding-left: 49px;
+	padding-right: 45px;
+  padding-top: 14px;
+	padding-bottom: 14px;
 }
 
 .buy:hover,
@@ -388,6 +404,7 @@ ul {
 	color: #32425c;
   background-color: transparent;
 	text-transform: uppercase;
+	padding: 11px 29px 12px 33px;
 }
 
 .in-bookmark:hover,
