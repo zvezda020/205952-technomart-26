@@ -48,7 +48,6 @@ ul {
 
 /* .block {box-sizing: content-box;} Применятся, чтобы задать блочную модель*/
 
-
 .button {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 14px;
@@ -383,7 +382,7 @@ ul {
 	background-color: #ffc047;
 }
 
-.popular span {
+.popular span{
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
 	font-weight: normal;
@@ -452,6 +451,52 @@ ul {
   object-fit: contain;
 	background-color: transparent;
 	background-image: url(../img/svg-technomart/red-button.svg);
+}
+.tool {
+	width: 220px;
+  height: 318px;
+  border: 1px solid #e5e5e5;
+  background-color: transparent;
+	text-align: center;
+}
+
+.industry{
+	width: 220px;
+  height: 145px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+}
+
+.industry-bosch{
+ padding: 53px 47px 55px 47px;
+}
+
+.industry-makita {
+	padding: 50px 49px 55px 48px;
+}
+
+.industry-de-walt {
+	padding: 48px 37px 53px 37px;
+}
+
+.industry-interskol {
+	padding: 21px 11px 36px 9px;
+}
+
+.industry-hitachi {
+	padding: 58px 23px 56px 28px;
+}
+
+.industry-lg {
+	padding: 35px 51px 37px 48px;
+}
+
+.industry-aeg {
+	padding: 23px 34px 26px 35px;
+}
+
+.industry-metabo {
+	padding: 34px 6px 42px 10px;
 }
 
 .visually-hidden {
