@@ -72,6 +72,34 @@ ul {
 	padding: 14px 55px;
 }
 
+.button-company{
+	padding: 14px 40px 12px 41px;
+}
+
+.button-map{
+	padding: 14px 59px 12px 63px;
+}
+
+.button-mail{
+	padding: 14px 199px;
+}
+
+.btn-vk {
+	padding: 13px 8px;
+}
+
+.btn-fb{
+	padding: 10px 15px;
+}
+
+.btn-insta {
+	padding: 10px 11px;
+}
+
+.button-catalog {
+	padding: 14px 45px 14px 49px;
+}
+
 .button-category {
 	width: 135px;
 	height: 38px;
@@ -114,6 +142,7 @@ ul {
   height: 47px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
+	padding: 13px 56px 15px 55px;
 }
 
 .logo:hover,
@@ -132,6 +161,7 @@ ul {
   height: 68px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
+	padding: 20px 41px 25px 41px;
 }
 
 .adress-footer {
