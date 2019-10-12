@@ -52,11 +52,17 @@ ul {
 *::after {
 	box-sizing: inherit;
 }
-
 /* .block {box-sizing: content-box;} Применятся, чтобы задать блочную модель*/
+
+img {
+	max-width: 100%
+	height: auto;
+	border: none;
+}
 
 .button {
 	font-family: "Cuprum", "Arial", sans-serif;
+	height: 10px;
 	font-size: 14px;
 	line-height: 18px;
 	text-align: center;
@@ -74,6 +80,10 @@ ul {
 	background-color: #ba2732;
 }
 
+.slide .button-catalog {
+	display: block;
+}
+
 .btn-filter{
 	padding: 14px 55px;
 }
@@ -87,7 +97,7 @@ ul {
 }
 
 .button-mail{
-	padding: 14px 199px;
+	padding: 14px 59px 12px 63px;
 }
 
 .btn-vk {
@@ -103,7 +113,9 @@ ul {
 }
 
 .button-catalog {
-	padding: 14px 45px 14px 49px;
+	width: 195px;
+	height: 38px;
+	padding: 12px 45px 12px 49px;
 }
 
 .button-category {
@@ -130,10 +142,14 @@ ul {
 .button-category:active {
 	background-color:rgba(0, 0, 0, 0.3);
 }
+.main-header {
+	min-height: 320px;
+	margin-bottom: 59px;
+}
 
 .header-up {
 	width: auto;
-	height: 42px;
+	min-height: 42px;
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 17px;
 	text-align: left;
@@ -141,10 +157,33 @@ ul {
 	background-color: #293449;
 }
 
+.header-up-container{
+	width: 940px;
+	margin: 0 auto;
+}
+
 .header-down {
-	width: auto;
-	height: 320px;
+	min-height: 320px;
 	background-color: #f4f7f9;
+}
+.header-down-container {
+	width: 940px;
+	margin: 0 auto;
+}
+.description {
+	width: 247px;
+	margin: 49px 0 40px 52px;
+}
+
+.store-description {
+	width: 196px;
+  height: 60px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  text-align: left;
+  color: #ee3643;
 }
 
 .logo {
@@ -154,6 +193,7 @@ ul {
   background-color: #ee3643;
 	padding: 13px 56px 15px 55px;
 }
+
 
 .logo:hover,
 .logo:focus{
@@ -172,6 +212,7 @@ ul {
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
 	padding: 20px 41px 25px 41px;
+	margin-bottom: 32px;
 }
 
 .adress-footer {
@@ -214,6 +255,10 @@ ul {
 	text-decoration: none;
 }
 
+.footer-navigation li {
+	display: inline;
+}
+
 .footer-navigation-item {
 	width: 79px;
   height: 17px;
@@ -239,6 +284,10 @@ ul {
 	text-decoration: none;
 }
 
+.footer-navigation-item li {
+	display: inline;
+}
+
 .footer-social {
   text-align: center;
 }
@@ -250,6 +299,10 @@ ul {
 	color: #ffffff;
 	display: inline-block;
 	border-radius: 50px;
+}
+
+.footer-social li{
+	display: inline;
 }
 
 .social-button:hover,
@@ -267,8 +320,6 @@ ul {
 }
 
 .footer-up {
-	width: auto;
-	height: 300px;
 	background-color: #32425c;
 }
 
@@ -280,43 +331,67 @@ ul {
 
 .service-back {
 	background-color: #f4f7f9;
+	padding: 67px 0 73px 0px;
 }
 
 .service-background {
-	width: auto;
-	height: 522px;
 	background-color: #f4f7f9;
+	margin-bottom: 82px;
+}
+
+.company-contact {
+	margin-bottom: 86px;
+	background-color: #ffffff;
 }
 
 .phone {
+	margin: 49px 71px 44px 53px;
+  border: 3px solid #ffffff;
+  line-height: 21px;
 	width: 270px;
-	height: 45px;
-	border: 3px solid white;
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 21px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 1;
-	letter-spacing: 0.42px;
 	text-align: left;
-	color: #e9292a;
+	color: #ee3643;
 	background-color: transparent;
 }
 
-
-/* Не получается пока, нужно подумать
-.phone::before{
-  content:"";
-  position: absolute;
-  width: 19px;
-  height: 19px;
-  padding-left: 10px;
-  padding-top:10px;
-  background-image: url("../img/svg-technomart/icon-phone.svg");
-  background-repeat: no-repeat;
+.adress {
+  width: 250px;
+  height: 13px;
+  font-family: "Cuprum", "Arial", sans-serif ;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #32425c;
+	margin-left: 81px;
 }
-*/
+
+.login{
+	margin: 46px 10px 67px 69px;
+  padding: 14px 26px 11px 46px;
+  font-family: "Cuprum","Arial",sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.registration {
+	padding: 14px 25px 11px 25px;
+  margin-top: 46px;
+  font-size: 21px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Cuprum","Arial",sans-serif;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+}
 
 .main-navigation {
 	width: 940px;
@@ -324,8 +399,10 @@ ul {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 17px;
 	line-height: 17px;
-	text-align: left;
+	text-align: center;
 	background-color: #32425c;
+	box-shadow: inset 0px -5px 0 0 #293449;
+	margin-bottom: 60px;
 }
 
 .site-navigation a {
@@ -342,32 +419,15 @@ ul {
 	color: rgba(255, 255, 255, 0.5);
 }
 
-.store-description {
-	width: 196px;
-  height: 60px;
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: italic;
-  font-stretch: normal;
-  line-height: 23px;
-  letter-spacing: normal;
-  text-align: left;
-  color: #ee3643;
+.site-navigation  li{
+	display: inline;
+  margin-right: 33px;
+	padding: 22px 10px 26px 10px;
 }
 
-.adress {
-  width: 250px;
-  height: 13px;
-  font-family: Cuprum;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 24px;
-  letter-spacing: normal;
-  text-align: center;
-  color: #32425c;
+.container {
+	width: 940px;
+	margin: 0 auto;
 }
 
 .category {
@@ -405,6 +465,7 @@ ul {
 	width: 940px;
 	height: 89px;
 	background-color: #f9f5f0;
+	margin-bottom: 21px;
 }
 
 .popular span{
@@ -487,13 +548,22 @@ ul {
 
 .industry{
 	width: 220px;
-  height: 145px;
   border: 1px solid #eaeaea;
   background-color: #ffffff;
 }
 
+.industry:hover li,
+.industry:focus li {
+	box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.industry:active li {
+	/* opasity для картинке в блоке?*/
+}
+
 .industry-bosch{
  padding: 53px 47px 55px 47px;
+ opacity: 0.3;
 }
 
 .industry-makita {
@@ -522,6 +592,71 @@ ul {
 
 .industry-metabo {
 	padding: 34px 6px 42px 10px;
+}
+
+.user-menu-item {
+  font-size: 17px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.bookmark:hover,
+.bookmark:focus,
+.basket:hover,
+.basket:focus {
+	background-color: #212a3a;
+}
+
+.bookmark:active,
+.basket:active {
+background-color: #161d29;
+}
+
+.order {
+	background-color: #5fbb2d;
+}
+
+.order:hover,
+.order:focus {
+  background-color:#5fbb2d;
+}
+
+.order:active {
+  background-color: #518534
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.personal-account {
+	  padding: 12px 65px 14px 46px;
+    margin: 47px 0 0 3px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 18px;
+    font-family: "Cuprum","Arial",sans-serif;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.history-order {
+	font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Cuprum","Arial",sans-serif;
+  color: #32425c;
+  background: #f2f6f8;
+}
+
+.my-room {
+	font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Cuprum","Arial",sans-serif;
+  background: #f2f6f8;
+  color: #32425c;
 }
 
 .visually-hidden {
