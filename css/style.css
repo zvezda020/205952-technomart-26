@@ -38,6 +38,14 @@ h2 {
 	color: #000000;
 }
 
+h3 {
+	font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 24px;
+  text-align: left;
+  color: #32425c;
+}
+
 ul {
 	list-style: none;
 }
@@ -93,7 +101,8 @@ img {
 }
 
 .button-mail {
-
+	width: 460px;
+  height: 38px;
 }
 
 .btn-vk {
@@ -192,6 +201,7 @@ img {
 	height: 47px;
 	box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 	background-color: #ee3643;
+	text-align: center;
 
 }
 
@@ -211,6 +221,7 @@ img {
 	height: 68px;
 	box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 	background-color: #ee3643;
+	text-align: center;
 
 	margin-bottom: 32px;
 }
@@ -796,6 +807,41 @@ img {
   font-weight: bold;
   line-height: 30px;
   text-align: left;
+  color: #000000;
+}
+
+.modal-add-cart {
+	width: 620px;
+  height: 282px;
+  box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+}
+
+.continue-buy {
+	width: 220px;
+  height: 38px;
+  background-color: #ffffff;
+	font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+	text-transform: uppercase;
+  color: #000000;
+}
+
+.continue-buy:hover,
+.continue-buy:focus {
+	background-color: #ee3643;
+}
+
+.add-product {
+	background-color: #f1f1f1;
+}
+
+.title-add-cart{
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+  line-height: 30px;
+  text-align: center;
   color: #000000;
 }
 
