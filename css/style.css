@@ -32,6 +32,7 @@ p {
 h2 {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
+	line-height: 30px;
 	text-align: left;
 	text-transform: uppercase;
 	color: #000000;
@@ -369,7 +370,6 @@ img {
 
 .login {
 	margin: 46px 10px 67px 69px;
-
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -573,6 +573,10 @@ img {
 	text-align: left;
 }
 
+.user-menu-item a {
+	color: white;
+}
+
 .bookmark:hover,
 .bookmark:focus,
 .cart:hover,
@@ -595,7 +599,8 @@ img {
 }
 
 .order:active {
-	background-color: #518534 color: rgba(255, 255, 255, 0.5);
+	background-color: #518534;
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .personal-account {
@@ -637,13 +642,13 @@ img {
 }
 
 .letter-us span {
- height: 13px;
- font-family: "Cuprum", "Arial" sans-serif;
- font-weight: 400;
- font-size: 18px;
- line-height: 18px;
- text-align: left;
- color: #000000;
+  height: 13px;
+  font-family: "Cuprum", "Arial" sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: left;
+  color: #000000;
 }
 
 .login-form input[type="text"] {
@@ -764,6 +769,34 @@ img {
 	height: 285px;
 	background-image: url("../img/credit.png");
   background-repeat: no-repeat;
+}
+
+.contact {
+	color: #ffd180;
+}
+
+.slide-title {
+	font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.slide-description {
+	font-size: 18px;
+	line-height: 24px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.filter-title {
+	font-size: 17px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: left;
+  color: #000000;
 }
 
 .visually-hidden {

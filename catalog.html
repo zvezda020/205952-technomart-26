@@ -70,9 +70,10 @@
         </ul>
         <h2 class="drill">Перфораторы</h2>
         <section>
-          <h2>Фильтр товаров</h2>
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <span class="marker">Фильтр:</span>
           <div class="#">
-            <label for="select-price">Цена</label>
+            <label class="filter-title" for="select-price">Цена</label>
             <input type="range" id="select-price" name="select-price" min="1" max="3000" step="1">
             <label for="price-minimum" class="visually-hidden">0</label>
             <input id="price-minimum" type="text" name="price-minimum" value="0">
@@ -82,7 +83,7 @@
           </div>
           <form class="" action="index.html" method="post">
             <fieldset>
-              <legend>Производители:</legend>
+              <legend class="filter-title">Производители:</legend>
               <ul>
                 <li class="filter-option">
                   <input id="filter-bosh" class="" type="checkbox" name="bosh" checked>
@@ -107,7 +108,7 @@
               </ul>
             </fieldset>
             <fieldset>
-              <legend>Питание:</legend>
+              <legend class="filter-title">Питание:</legend>
               <ul>
                 <li class="filter-option">
                   <input class="filter-input-radio" type="radio" name="battery" value="" id="filter-battery">
@@ -123,16 +124,16 @@
           </form>
         </section>
         <section>
-          <h2>Сортировка товаров</h2>
-          <span>Сортировка:</span>
+          <h2 class="visually-hidden">Сортировка товаров</h2>
+          <span class="marker">Сортировка:</span>
           <ul>
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По функционалу</li>
+            <li class="marker">По цене</li>
+            <li class="marker">По типу</li>
+            <li class="marker">По функционалу</li>
           </ul>
         </section>
         <section>
-          <h2>Ассортимент перфораторов</h2>
+          <h2 class="visually-hidden">Ассортимент перфораторов</h2>
           <ul>
             <li>
               <article class="tool">
@@ -287,7 +288,7 @@
       <div class="footer-up">
         <div class="container">
           <div class="logo-footer">
-            <a><img src="img/logo.png" width="109" height="19" alt="Логотип Техномарт"></a>
+            <a href="index.html"><img src="img/logo.png" width="109" height="19" alt="Логотип Техномарт"></a>
           </div>
           <p class="address-footer"><span>г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span> <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
           <ul class="footer-navigaition">
@@ -307,22 +308,22 @@
       </div>
       <div class="footer-down">
         <div class="container"
-        <p class="copyright">&copy;2010-2017 Компания &#171;Техномарт&#187;
-          <span>Все права защищены</span>
+        <p><span class="copyright">&copy;2010-2017 Компания &#171;Техномарт&#187;</span>
+          <span class="copyright">Все права защищены</span>
         </p>
         <ul class="footer-social">
           <li><a class="social-button btn-vk" href="#"> <img src="img/svg-technomart/icon-vk.svg" width="26" height="15" alt="Вконтакте"></a></li>
           <li><a class="social-button btn-fb" href="#"><img src="img/svg-technomart/icon-fb.svg" width="12" height="22" alt="Фейсбук"></a></li>
           <li><a class="social-button btn-insta" href="#"><img src="img/svg-technomart/icon-insta.svg" width="21" height="21" alt="Инстаграм"></a></li>
         </ul>
-        <p>
+        <p class="copyright">
           Обратная связь:
-          <span><a href="mailto:mail@htmlacademy.ru?subject=feedback">mail@htmlacademy.ru</a></span>
+          <span class="copyright"><a class="contact" href="mailto:mail@htmlacademy.ru?subject=feedback">mail@htmlacademy.ru</a></span>
         </p>
-        <p class="footer-copyright">Разработано &mdash;
-          <span><a href="https://htmlacademy.ru"> htmlacademy.ru</a></span>
+        <p class="copyright">Разработано &mdash;
+          <span class="copyright"><a class="contact" href="https://htmlacademy.ru"> htmlacademy.ru</a></span>
         </p>
-      </div>
+       </div>
       </div>
     </footer>
   </body>
