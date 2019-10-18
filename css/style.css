@@ -222,6 +222,8 @@ img {
 }
 
 .footer-navigaition {
+	display: flex;
+	flex-direction: row;
   width: 69px;
   height: 13px;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -248,6 +250,8 @@ img {
 .footer-navigation li {}
 
 .footer-navigation-item {
+	display: flex;
+	flex-direction: row;
   width: 79px;
   height: 17px;
   font-family: "Cuprum", "Arial" sans-serif;
@@ -292,7 +296,8 @@ img {
   background-color: #ee3643;
 }
 
-.copyright {
+.copyright,
+.feedback {
   width: 228px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
@@ -525,7 +530,21 @@ img {
 }
 
 .assortiment,
-.industry {}
+.industry,
+.our-features {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-right {
+	display: flex;
+	flex-direction: row;
+}
+
+.footer-left {
+	display: flex;
+	flex-direction: column;
+}
 
 .industry:hover a,
 .industry:focus a {
@@ -591,27 +610,17 @@ img {
   background-color: #ffffff;
 }
 
-.history-goods {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-  font-style: normal;
-  font-family: "Cuprum", "Arial", sans-serif;
-  color: #32425c;
-  background-color: #f2f6f8;
-}
-
 .user-navigation {
-  
-}
 
-.root-user {
+}
+.button-orders,
+.user-menu-login-enter {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
   font-family: "Cuprum", "Arial", sans-serif;
-  background: #f2f6f8;
+  background-color: #f2f6f8;
   color: #32425c;
 }
 
