@@ -84,24 +84,22 @@ img {
   background-color: #ba2732;
 }
 
-.slide .button-catalog {}
-
-.button-filter {}
-
-.button-company {}
-
-.button-map {}
-
 .button-mail {
   width: 460px;
   height: 38px;
 }
 
-.btn-vk {}
+.btn-vk {
+  padding: 13px 8px 14px 8px;
+}
 
-.btn-fb {}
+.btn-fb {
+  padding: 10px 15px 10px 15px;
+}
 
-.btn-insta {}
+.btn-insta {
+  padding: 10px 11px 11px 10px;
+}
 
 .button-catalog {
   width: 195px;
@@ -137,7 +135,7 @@ img {
 
 .header-up {
   width: auto;
-  min-height: 42px;
+  height: 42px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
   text-align: left;
@@ -147,8 +145,18 @@ img {
 
 .header-up-container {
   display: flex;
+  justify-content: space-between;
   width: 940px;
   margin: 0 auto;
+}
+
+.header-up-left {
+  display: flex;
+}
+
+.header-up-right {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-down {
@@ -167,6 +175,7 @@ img {
 }
 
 .store-description {
+  margin-left: 53px;
   width: 196px;
   height: 60px;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -180,9 +189,11 @@ img {
 .logo {
   width: 220px;
   height: 47px;
+  padding: 13px 56px 15px 55px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
   text-align: center;
+  margin-right: 20px;
 }
 
 .logo:hover,
@@ -203,16 +214,18 @@ img {
   background-color: #ee3643;
   text-align: center;
   margin-bottom: 32px;
+  padding: 20px 41px 25px 41px;
 }
 
 .address-footer {
+  width: 332px;
+  margin: 0;
+  padding-left: 3px;
+  font-size: 18px;
+  line-height: 24px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 24px;
-  letter-spacing: normal;
   text-align: left;
   color: #f1f5f7;
 }
@@ -222,10 +235,10 @@ img {
 }
 
 .footer-navigaition {
-	display: flex;
-	flex-direction: row;
-  width: 69px;
-  height: 13px;
+  width: 548px;
+  margin-top: 37px;
+  display: flex;
+  justify-content: space-between;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -247,11 +260,35 @@ img {
   text-decoration: none;
 }
 
-.footer-navigation li {}
+.submenu {
+  display: flex;
+  justify-content: space-between;
+  width: 525px;
+}
+
+.submenu-item a {
+  color: #ffd180;
+}
+
+.submenu-item a:hover,
+.submenu-item a:focus {
+  text-decoration: underline;
+}
+
+.submenu-item a:active {
+  color: #ad956f;
+  text-decoration: none;
+}
+
+.submenu-item a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffd180;
+}
 
 .footer-navigation-item {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
   width: 79px;
   height: 17px;
   font-family: "Cuprum", "Arial" sans-serif;
@@ -275,30 +312,74 @@ img {
   text-decoration: none;
 }
 
-.footer-navigation-item li {}
+.search-bar::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/svg-technomart/icon-search.svg");
+  opacity: 0.3;
+  position: absolute;
+  left: 15px;
+}
+
+
+/*Николай, я не могу поправить картинку на место. Подскажите,
+Что я делаю не так?*/
+
+.search-bar input {
+  width: 270px;
+  height: 42px;
+  background-color: transparent;
+  border: none
+}
+
+.search-bar input::placeholder {
+  color: white;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400
+}
+
+.search-bar:hover,
+.search-bar:focus {
+  width: 270px;
+  height: 42px;
+  background-color: #212a3a;
+}
+
+.search-bar:active {
+  background-color: white;
+  color: black;
+}
+
+
+/*Я здесь совсем не понимаю как сделать фон белым пока там пишется текст,
+И еще как мне туда вставить картинку так, чтобы она могла менять свой цвет?*/
 
 .footer-social {
+  width: 170px;
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
 .social-button {
+  display: inline-block;
   width: 42px;
   height: 42px;
   background-color: #212a3a;
   color: #ffffff;
   border-radius: 50px;
+  margin-right: 3px;
 }
-
-.footer-social li {}
 
 .social-button:hover,
 .social-button:focus {
   background-color: #ee3643;
 }
 
-.copyright,
-.feedback {
-  width: 228px;
+.site-copyright {
+  width: 96px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -306,14 +387,40 @@ img {
   color: white;
 }
 
+.copyright,
+.feedback {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  color: white;
+}
+
+.copyright {
+  margin: 0 44px 0 0;
+  width: 228px;
+}
+
+.feedback {
+  width: 135px;
+  margin-right: 52px;
+}
+
 .footer-up {
   background-color: #32425c;
 }
 
 .footer-down {
+  padding-top: 38px;
+  padding-bottom: 30px;
   width: auto;
   height: 107px;
   background-color: #293449;
+}
+
+.container-footer-down {
+  display: flex;
+  justify-content: space-between;
 }
 
 .service-back {
@@ -330,31 +437,43 @@ img {
   background-color: #ffffff;
 }
 
-.phone {
-  margin: 49px 71px 44px 53px;
-  border: 3px solid #ffffff;
-  line-height: 21px;
-  width: 270px;
-  font-family: "Cuprum", "Arial", sans-serif;
+.contacts .phone {
+  position: relative;
+  padding: 10px 0;
+  border: 3px solid #fff;
+  width: 265px;
+  margin: 0 0 0 12px
+}
+
+.phone-number {
   font-size: 21px;
-  text-align: left;
+  line-height: 18px;
   color: #ee3643;
-  background-color: transparent;
+  margin-left: 71px
+}
+
+.phone-number::before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/svg-technomart/icon-phone.svg");
+  position: absolute;
+  top: 10px;
+  left: 32px
 }
 
 .address {
-  width: 250px;
-  height: 13px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
   color: #32425c;
-  margin-left: 81px;
+  margin: 3px 0 0 22px;
 }
 
 .login {
-  margin: 46px 10px 67px 69px;
+  width: 121px;
+  height: 45px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -389,8 +508,25 @@ img {
   margin-bottom: 60px;
 }
 
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  background-color: #32425c;
+  border-bottom: 5px solid #293449;
+  padding-left: 21px;
+  padding-right: 25px;
+}
+
+.site-navigation li {
+  flex-grow: 1;
+  text-align: center;
+}
+
 .site-navigation a {
   color: #ffffff;
+  line-height: 17px;
+  display: block;
+  padding: 20px 25px 19px;
 }
 
 .site-navigation a:hover,
@@ -400,12 +536,7 @@ img {
 
 .site-navigation a:active {
   background-color: #1d2739;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.site-navigation {
-  border: 1px solid white;
-  display: flex;
+  color: #868c95;
 }
 
 .container {
@@ -532,18 +663,18 @@ img {
 .assortiment,
 .industry,
 .our-features {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-right {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-left {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .industry:hover a,
@@ -562,29 +693,62 @@ img {
   background-color: #ffffff;
 }
 
-.user-menu-item {
-  font-size: 17px;
-  line-height: 18px;
-  text-align: left;
+.user-menu {
+  display: flex;
 }
 
-.user-menu-item a {
+.user-menu a {
   color: white;
+}
+
+.user-menu-item {
+  position: relative;
+  width: 150px;
+  text-align: center;
+}
+
+
+/*Николай, подскажите, у меня не получается зафиксировать высоту юзер меню при
+наведении, получается что она вылезает за высоту всего верхнего меню.
+Если я марджины, то все прижимается кверху, а если оставляю, то все выпадает*/
+
+.user-menu .bookmark::before {
+  content: "";
+  width: 14px;
+  height: 16px;
+  background-image: url("../img/svg-technomart/icon-bookmark.svg");
+  opacity: 0.3;
+  position: absolute;
+  left: 15px;
+}
+
+.user-menu .cart::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/svg-technomart/icon-cart.svg");
+  opacity: 0.3;
+  position: absolute;
+  left: 15px;
 }
 
 .bookmark:hover,
 .bookmark:focus,
 .cart:hover,
 .cart:focus {
+  padding: 12px 28px 13px 34px;
   background-color: #212a3a;
+  margin: 0 auto;
 }
 
 .bookmark:active,
 .cart:active {
+  padding: 12px 28px 13px 34px;
   background-color: #161d29;
 }
 
 .order {
+  padding: 12px 22px 13px 20px;
   background-color: #5fbb2d;
 }
 
@@ -598,21 +762,53 @@ img {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.user-menu-login {
-  margin: 47px 0 0 3px;
-  font-weight: 400;
-  font-style: normal;
+.user-navigation {
+  margin: 2px 0 0;
+  display: flex;
+}
+
+.user-navigation a {
   font-size: 21px;
-  line-height: 18px;
-  font-family: "Cuprum", "Arial", sans-serif;
-  text-decoration: none;
+  line-height: 21px;
   color: #000000;
   background-color: #ffffff;
 }
 
-.user-navigation {
-
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #ee3643;
 }
+
+.user-navigation a:active {
+  color: #b2b2b2;
+}
+
+.user-navigation .login {
+  align-self: flex-start;
+  position: relative;
+  padding: 15px 27px 15px 48px;
+  margin-right: 10px;
+}
+
+.login::before {
+  content: "";
+  width: 20px;
+  height: 17px;
+  object-fit: contain;
+  background-image: url("../img/svg-technomart/icon-login.svg");
+  color: #c5c5c5;
+  position: absolute;
+  left: 15px;
+}
+
+
+/*Как при наведении картинку цветом поменять? */
+
+.registration {
+  align-self: flex-start;
+  padding: 15px 24px;
+}
+
 .button-orders,
 .user-menu-login-enter {
   font-weight: 400;
@@ -878,6 +1074,80 @@ img {
 }
 
 .company-description {
-  border: 1px solid black;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 158px;
+}
+
+.contacts {
+  width: 300px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-submenu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 27px;
+  padding-bottom: 50px;
+  margin: 0;
+  padding-left: 3px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.communication {
+  width: 300px;
+  display: flex;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.user-menu-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 33px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+}
+
+.user-menu-login {
+  align-self: flex-start;
+  position: relative;
+  padding: 14px 69px 11px 47px;
+  margin-right: 10px;
+  margin-top: 46px;
+  font-size: 21px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Cuprum", "Arial", sans-serif;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.user-menu-login::before {
+  content: "";
+  width: 20px;
+  height: 18px;
+  background-image: url("../img/svg-technomart/icon-user.svg");
+  position: absolute;
+  left: 15px;
+}
+
+.user-menu-login::after {
+  content: "";
+  width: 20px;
+  height: 17px;
+  background-image: url("../img/svg-technomart/icon-logout.svg");
+  position: absolute;
+  right: 15px;
 }
